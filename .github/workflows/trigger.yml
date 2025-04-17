@@ -1,9 +1,7 @@
 name: Weekly schedule
 
 on:
-  schedule:
-    - cron:  '0 4 * * 1'
-  workflow_dispatch:
+  - push
 
 jobs:
   trigger:
