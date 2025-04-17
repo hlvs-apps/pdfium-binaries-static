@@ -27,11 +27,11 @@ rm -f "$STAGING/include/PRESUBMIT.py"
 
 case "$OS" in
   android|linux)
-    mv "$BUILD/libpdfium.a" "$STAGING_LIB"
+    mv "$BUILD/obj/libpdfium.a" "$STAGING_LIB"
     ;;
 
   mac|ios)
-    mv "$BUILD/libpdfium.a" "$STAGING_LIB"
+    mv "$BUILD/obj/libpdfium.a" "$STAGING_LIB"
     ;;
 
   emscripten)
