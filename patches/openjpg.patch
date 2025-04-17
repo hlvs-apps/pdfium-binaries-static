@@ -1,34 +1,12 @@
 diff --git a/BUILD.gn b/BUILD.gn
-index 4edba9f43..59296587a 100644
+index 4edba9f43..d9c3bbc64 100644
 --- a/BUILD.gn
 +++ b/BUILD.gn
-@@ -31,6 +31,9 @@ config("pdfium_common_config") {
+@@ -31,6 +31,7 @@ config("pdfium_common_config") {
    include_dirs = [ "." ]
    defines = []
  
 +  include_dirs += ["//third_party/libjpeg_turbo/src"]
-+
-+
    if (!use_system_libopenjpeg2) {
      defines += [ "OPJ_STATIC" ]
    }
-@@ -441,3 +444,7 @@ group("gn_check") {
-     deps += [ "//skia" ]
-   }
- }
-+
-+
-+
-+
-diff --git a/pdfium.gni b/pdfium.gni
-index 544bfb205..86c570231 100644
---- a/pdfium.gni
-+++ b/pdfium.gni
-@@ -5,6 +5,7 @@
- import("//build/config/rust.gni")
- import("//build_overrides/pdfium.gni")
- 
-+
- # This file contains PDFium-related build flags.
- 
- declare_args() {
