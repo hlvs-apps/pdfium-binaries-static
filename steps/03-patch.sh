@@ -7,7 +7,7 @@ TARGET_ENVIRONMENT="${PDFium_TARGET_ENVIRONMENT:-}"
 
 pushd "${SOURCE}"
 
-[ "$OS" != "emscripten" ] && git apply -v "$PATCHES/shared_library.patch"
+#[ "$OS" != "emscripten" ] && git apply -v "$PATCHES/shared_library.patch"
 git apply -v "$PATCHES/public_headers.patch"
 
 git apply -v "$PATCHES/openjpg.patch"
