@@ -20,3 +20,15 @@ index 4edba9f43..59296587a 100644
 +
 +
 +
+diff --git a/pdfium.gni b/pdfium.gni
+index 544bfb205..86c570231 100644
+--- a/pdfium.gni
++++ b/pdfium.gni
+@@ -5,6 +5,7 @@
+ import("//build/config/rust.gni")
+ import("//build_overrides/pdfium.gni")
+ 
++
+ # This file contains PDFium-related build flags.
+ 
+ declare_args() {
