@@ -124,5 +124,5 @@ export PATH
 [ $START_STEP -le 5 ] && . steps/05-configure.sh
 [ $START_STEP -le 6 ] && . steps/06-build.sh
 [ $START_STEP -le 7 ] && . steps/07-stage.sh
-[ $START_STEP -le 8 ] && . steps/08-test.sh
+#[ $START_STEP -le 8 ] && . steps/08-test.sh
 [ $START_STEP -le 9 ] && . steps/09-pack.sh

@@ -11,6 +11,11 @@ IS_DEBUG=${PDFium_IS_DEBUG:-false}
 mkdir -p "$BUILD"
 
 (
+  echo "use_custom_libcxx = false"
+  echo "pdf_use_skia=true"
+  echo "use_system_libjpeg=true"
+  echo "pdf_is_complete_lib = true"
+
   echo "is_debug = $IS_DEBUG"
   echo "pdf_is_standalone = true"
   echo "pdf_use_partition_alloc = false"
