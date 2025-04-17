@@ -47,7 +47,7 @@ jobs:
       is_debug: ${{ github.event.inputs.is_debug == 'true' }}
       target_os: linux
       target_cpu: arm64
-      enable_v8: fals
+      enable_v8: false
 
   linux_x64:
     name: Linux x64
